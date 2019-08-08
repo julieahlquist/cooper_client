@@ -56,7 +56,10 @@ class App extends Component {
         )
       } else {
         renderLogin = (
-          <button id="login" onClick={() => this.setState({ renderLoginForm: true })}>Login</button>
+          <>
+            <button id="login" onClick={() => this.setState({ renderLoginForm: true })}>Login</button>
+            <p>{this.state.message}</p>
+          </>
         )
       }
     }
