@@ -74,12 +74,14 @@ class App extends Component {
     } else {
       if (this.state.renderLoginForm === true) {
           renderLogin = (
-            <>
+            <div className="container">
+              <div className="item">
             <LoginForm 
               loginHandler={this.onLogin.bind(this)}
               inputChangeHandler={this.onChange.bind(this)}
             />
-          </>
+            </div>
+          </div>
         )
       } else {
         renderLogin = (
@@ -91,11 +93,15 @@ class App extends Component {
       }
     }
     return (
-      <div>
+      <div id="border">
+      <div className="container">
+        <div id="input-fields">
         <InputFields
           inputChangeHandler={this.onChange.bind(this)}
         />
-        
+        </div>
+
+        <div className="item">
       <DisplayCooperResult
         distance={this.state.distance}
         gender={this.state.gender}
@@ -104,8 +110,10 @@ class App extends Component {
         entrySaved={this.state.entrySaved}
         entryHandler={this.entryHandler.bind(this)}
       />
+      </div>
       {performanceDataIndex}
       {renderLogin}
+    </div>
     </div>
     )
   }
