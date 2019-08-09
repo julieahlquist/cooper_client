@@ -94,12 +94,9 @@ class App extends Component {
     }
     return (
       <div id="border">
-      <div className="container">
-        <div id="input-fields">
         <InputFields
           inputChangeHandler={this.onChange.bind(this)}
         />
-        </div>
 
         <div className="item">
       <DisplayCooperResult
@@ -113,7 +110,6 @@ class App extends Component {
       </div>
       {performanceDataIndex}
       {renderLogin}
-    </div>
     </div>
     )
   }

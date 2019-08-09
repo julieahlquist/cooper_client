@@ -1,0 +1,42 @@
+.field-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40%;
+}
+.label {
+  position: relative;
+}
+.distance-f {
+  width: full;
+  margin:10px;
+}
+.age-f {
+  width: full;
+  margin:10px;
+}
+.gender-f {
+  width: full;
+  margin:10px;
+}
+#distance {
+  outline: none;
+  border: none;
+  width: 100px;
+  border-radius: 5px;
+}
+#age {
+  outline: none;
+  border: none;
+  width: 100px;
+  border-radius: 5px;
+}
+#gender {
+  outline: none;
+  border-radius: 2px;
+  border: none;
+  width: 100px;
+}
+
+
