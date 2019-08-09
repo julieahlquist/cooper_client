@@ -3,7 +3,6 @@ import DisplayCooperResult from './Components/DisplayCooperResult';
 import InputFields from './Components/InputFields';
 import LoginForm from './Components/LoginForm';
 import { authenticate } from './Modules/Auth';
-import { saveData } from './Modules/PerformanceData';
 import DisplayPerformanceData from './Components/DisplayPerformanceData';
 
 class App extends Component {
