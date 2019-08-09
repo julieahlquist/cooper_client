@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Blinker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Blinker|Catamaran:900&display=swap');
 
 body, html {
   background-color: #bad6aa;
@@ -6,6 +6,15 @@ body, html {
   font-family: 'Blinker', sans-serif;
 }
 
+#top-title {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 40px;
+  -webkit-text-fill-color: #bad6aa; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
 #login {
   background-color: aqua;
 }
@@ -14,6 +23,7 @@ body, html {
   border-style: solid;
   border-color: rgb(206, 150, 77);
   border-width: 70px;
-  border-radius: 40%;
+  border-radius: 47%;
   min-height: 500px;
+  margin: 20px;
 }
