@@ -3,6 +3,7 @@ import DisplayCooperResult from './Components/DisplayCooperResult';
 import InputFields from './Components/InputFields';
 import LoginForm from './Components/LoginForm';
 import { authenticate } from './Modules/Auth';
+import { saveData } from './Modules/PerformanceData'
 
 class App extends Component {
   constructor(props) {
@@ -15,13 +16,19 @@ class App extends Component {
       authenticated: false,
       email: '',
       password: '',
-      message: ''
+      message: '',
+      entrySaved: false
     }
+  }
+
+  entryHandler() {
+    this.setState({ entrySaved: true});
   }
 
   onChange(event) {
     this.setState({
-      [event.target.id]: event.target.value
+      [event.target.id]: event.target.value,
+      entrySaved: false
     });
   }
 
@@ -73,6 +80,9 @@ class App extends Component {
         distance={this.state.distance}
         gender={this.state.gender}
         age={this.state.age}
+        authenticated={this.state.authenticated}
+        entrySaved={this.state.entrySaved}
+        entryHandler={this.entryHandler.bind(this)}
       />
       {renderLogin}
     </div>
