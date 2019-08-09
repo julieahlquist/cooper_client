@@ -19,7 +19,7 @@ class DisplayCooperResult extends Component {
   }
 
   render () {
-    let results ;
+    let results;
     let saveButton;
 
    

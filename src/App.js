@@ -95,7 +95,14 @@ class App extends Component {
     return (
       <div>
       <div id="top-title">COOPER CALCULATOR</div>
-      <div id="border">
+      
+      <div id="track-outer">
+        <div className="track track1"></div>
+        <div className="track track2"></div>
+        <div className="track track3"></div>
+        <div className="track track4"></div>
+        <div className="track track5"></div>
+
         <InputFields
           inputChangeHandler={this.onChange.bind(this)}
         />

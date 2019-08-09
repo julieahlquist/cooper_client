@@ -1,0 +1,61 @@
+.track-outer {
+  position: relative;
+}
+
+.track { border: 10px solid #B27569; transition: all ease-in-out 200ms; position: absolute;}
+.track:hover {border: 10px solid #825046; cursor:pointer}
+.track:hover::before{ background:#825046;}
+
+.track::before {content: ""; background:#B27569; height: 10px; position:absolute; bottom:-11px; width:100px; border-top:1px solid #fff; border-bottom:1px solid #fff; transition: all ease-in-out 200ms;}
+
+/*  position changes by 11px every track, size changes by 22, border-rad by 10 */
+
+.track1 {
+  height: 200px;
+  width: 450px;
+  border-radius:100px;
+  
+  left:0px;
+  top:0px;
+}
+.track1::before {left: 200;}
+
+.track2 {
+  height: 178px;
+  width: 428px;
+  border-radius:90px;
+  
+  left:11px;
+  top:11px;
+}
+.track2::before {left: -11px;}
+
+.track3 {
+  height: 156px;
+  width: 406px;
+  border-radius:80px;
+  
+  left:22px;
+  top:22px;
+}
+.track3::before {left: -22px;}
+
+.track4 {
+  height: 134px;
+  width: 384px;
+  border-radius:70px;
+  
+  left:33px;
+  top:33px;
+}
+.track4::before {left: -33px;}
+
+.track5 {
+  height: 112px;
+  width: 362px;
+  border-radius:60px;
+  
+  left:44px;
+  top:44px;
+}
+.track5::before {left: -44px;}
