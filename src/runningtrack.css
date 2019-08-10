@@ -1,4 +1,8 @@
-.track-outer {
+#track-container {
+  display: flex;
+}
+
+#track-outer {
   position: relative;
 }
 

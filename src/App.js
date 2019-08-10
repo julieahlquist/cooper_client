@@ -4,6 +4,7 @@ import InputFields from './Components/InputFields';
 import LoginForm from './Components/LoginForm';
 import { authenticate } from './Modules/Auth';
 import DisplayPerformanceData from './Components/DisplayPerformanceData';
+import RunningTrack from './Components/RunningTrack'
 
 class App extends Component {
   constructor(props) {
@@ -95,19 +96,13 @@ class App extends Component {
     return (
       <div>
       <div id="top-title">COOPER CALCULATOR</div>
-      
-      <div id="track-outer">
-        <div className="track track1"></div>
-        <div className="track track2"></div>
-        <div className="track track3"></div>
-        <div className="track track4"></div>
-        <div className="track track5"></div>
 
+      <RunningTrack />
+      <div id="fields-container">
         <InputFields
           inputChangeHandler={this.onChange.bind(this)}
         />
 
-        <div className="item">
       <DisplayCooperResult
         distance={this.state.distance}
         gender={this.state.gender}
@@ -116,10 +111,9 @@ class App extends Component {
         entrySaved={this.state.entrySaved}
         entryHandler={this.entryHandler.bind(this)}
       />
-      </div>
       {performanceDataIndex}
       {renderLogin}
-    </div>
+      </div>
     </div>
     )
   }
