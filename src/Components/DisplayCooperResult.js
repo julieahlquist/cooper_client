@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CooperCalculator from '../Modules/CooperCalculator';
 import { saveData } from '../Modules/PerformanceData';
+import '../displayresult.css'
 
 class DisplayCooperResult extends Component {
 
@@ -21,7 +22,6 @@ class DisplayCooperResult extends Component {
   render () {
     let results;
     let saveButton;
-
    
     if (this.props.authenticated === true && this.props.entrySaved === false) {
       saveButton = (
@@ -40,11 +40,11 @@ class DisplayCooperResult extends Component {
 
     if (this.props.age !== '' && this.props.distance !== '') {
       results = (
-        <>
-          <p>{this.props.age} y/o {this.props.gender} running {this.props.distance} meters.</p> 
+        <div className="result-container">
+          <p>{this.props.age} y/o {this.props.gender} running {this.props.distance} meters. </p>
           <p>Result: {this.calculate()}</p>
           {saveButton}
-        </>
+        </div>
       )
     }
     return (
