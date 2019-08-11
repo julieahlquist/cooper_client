@@ -59,17 +59,19 @@ class App extends Component {
       )
       if (this.state.renderIndex === true) {
         performanceDataIndex = (
-          <>
+          <div className="past-container">
             <DisplayPerformanceData
               updateIndex={this.state.updateIndex}
               indexUpdated={this.indexUpdated.bind(this)}
             />
-            <button onClick={() => this.setState({ renderIndex: false })}>Hide past entries</button>
-          </>
+            <button onClick={() => this.setState({ renderIndex: false })} id="hide">Hide past entries</button>
+          </div>
         )
       } else {
         performanceDataIndex = (
+        <div className="show-container">
           <button id="show-index" onClick={() => this.setState({ renderIndex: true })}>Show past entries</button>
+        </div>
         )
       }
     } else {

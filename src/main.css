@@ -35,3 +35,45 @@ body, html {
   border-radius: 5px;
   color: gray;
 }
+
+.show-container {
+  position: relative;
+  top: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  align-items: flex-end;
+}
+
+#show-index {
+  outline: none;
+  border: none;
+  width: 120px;
+  height: 20px;
+  border-radius: 5px;
+  color: gray;
+}
+
+.past-container {
+  position: relative;
+  top: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  align-items: flex-end;
+}
+
+#hide {
+  outline: none;
+  border: none;
+  width: 120px;
+  height: 20px;
+  border-radius: 5px;
+  color: gray;
+}
