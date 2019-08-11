@@ -96,9 +96,8 @@ class App extends Component {
     return (
       <div>
       <div id="top-title">COOPER CALCULATOR</div>
-
+      
       <RunningTrack />
-      <div id="fields-container">
         <InputFields
           inputChangeHandler={this.onChange.bind(this)}
         />
@@ -114,7 +113,6 @@ class App extends Component {
       {performanceDataIndex}
       {renderLogin}
       </div>
-    </div>
     )
   }
 }

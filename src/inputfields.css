@@ -5,6 +5,8 @@
   justify-content: center;
   margin-top: 30px;
   align-items: flex-bottom;
+  position: relative;
+  top: 250px;
 }
 .label {
   position: relative;
