@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin-top: 30px;
   align-items: flex-bottom;
   position: relative;
   top: 250px;
@@ -47,5 +46,3 @@
   height: 20px;
   color: gray;
 }
-
-

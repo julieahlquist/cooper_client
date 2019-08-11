@@ -111,7 +111,9 @@ class App extends Component {
         entryHandler={this.entryHandler.bind(this)}
       />
       {performanceDataIndex}
+      <div className="login-container">
       {renderLogin}
+      </div>
       </div>
     )
   }
