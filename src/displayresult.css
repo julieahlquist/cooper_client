@@ -1,0 +1,16 @@
+.result-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-bottom;
+  position: relative;
+  top: 250px;
+}
+#inputs {
+  position: relative;
+  display: block;
+}
+#result {
+  display: block;
+}

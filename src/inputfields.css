@@ -1,0 +1,48 @@
+.field-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-bottom;
+  position: relative;
+  top: 250px;
+}
+.label {
+  position: relative;
+}
+.distance-f {
+  width: full;
+  margin:10px;
+}
+.age-f {
+  width: full;
+  margin:10px;
+}
+.gender-f {
+  width: full;
+  margin:10px;
+}
+#distance {
+  outline: none;
+  border: none;
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  color: gray;
+}
+#age {
+  outline: none;
+  border: none;
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  color: gray;
+}
+#gender {
+  outline: none;
+  border-radius: 2px;
+  border: none;
+  width: 100px;
+  height: 20px;
+  color: gray;
+}

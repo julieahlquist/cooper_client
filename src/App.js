@@ -3,8 +3,8 @@ import DisplayCooperResult from './Components/DisplayCooperResult';
 import InputFields from './Components/InputFields';
 import LoginForm from './Components/LoginForm';
 import { authenticate } from './Modules/Auth';
-import { saveData } from './Modules/PerformanceData';
 import DisplayPerformanceData from './Components/DisplayPerformanceData';
+import RunningTrack from './Components/RunningTrack'
 
 class App extends Component {
   constructor(props) {
@@ -59,28 +59,32 @@ class App extends Component {
       )
       if (this.state.renderIndex === true) {
         performanceDataIndex = (
-          <>
+          <div className="past-container">
             <DisplayPerformanceData
               updateIndex={this.state.updateIndex}
               indexUpdated={this.indexUpdated.bind(this)}
             />
-            <button onClick={() => this.setState({ renderIndex: false })}>Hide past entries</button>
-          </>
+            <button onClick={() => this.setState({ renderIndex: false })} id="hide">Hide past entries</button>
+          </div>
         )
       } else {
         performanceDataIndex = (
+        <div className="show-container">
           <button id="show-index" onClick={() => this.setState({ renderIndex: true })}>Show past entries</button>
+        </div>
         )
       }
     } else {
       if (this.state.renderLoginForm === true) {
           renderLogin = (
-            <>
+            <div className="container">
+              <div className="item">
             <LoginForm 
               loginHandler={this.onLogin.bind(this)}
               inputChangeHandler={this.onChange.bind(this)}
             />
-          </>
+            </div>
+          </div>
         )
       } else {
         renderLogin = (
@@ -93,10 +97,13 @@ class App extends Component {
     }
     return (
       <div>
+      <div id="top-title">COOPER CALCULATOR</div>
+      
+      <RunningTrack />
         <InputFields
           inputChangeHandler={this.onChange.bind(this)}
         />
-        
+
       <DisplayCooperResult
         distance={this.state.distance}
         gender={this.state.gender}
@@ -106,8 +113,10 @@ class App extends Component {
         entryHandler={this.entryHandler.bind(this)}
       />
       {performanceDataIndex}
+      <div className="login-container">
       {renderLogin}
-    </div>
+      </div>
+      </div>
     )
   }
 }

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Blinker|Catamaran:900&display=swap');
+
+body, html {
+  background-color: #bad6aa;
+  color: white;
+  font-family: 'Blinker', sans-serif;
+}
+
+.login-container {
+  position: relative;
+  top: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  align-items: flex-end;
+}
+
+#top-title {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 40px;
+  -webkit-text-fill-color: #bad6aa; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+#login {
+  outline: none;
+  border: none;
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  color: gray;
+}
+
+.show-container {
+  position: relative;
+  top: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  align-items: flex-end;
+}
+
+#show-index {
+  outline: none;
+  border: none;
+  width: 120px;
+  height: 20px;
+  border-radius: 5px;
+  color: gray;
+}
+
+.past-container {
+  position: relative;
+  top: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  align-items: flex-end;
+}
+
+#hide {
+  outline: none;
+  border: none;
+  width: 120px;
+  height: 20px;
+  border-radius: 5px;
+  color: gray;
+}

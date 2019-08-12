@@ -1,18 +1,21 @@
 import React from 'react';
+import '../loginform.css'
 
 const LoginForm = (props) => {
   return (
     <form id="login-form">
-      <div>
-        <label>Email</label>
+      <div className="field-form">
+        <label className="label">Email</label>
+        <br></br>
         <input id="email" onChange={props.inputChangeHandler}></input>
       </div>
 
-      <div>
-        <label>Password</label>
+      <div className="field-form">
+        <label className="label">Password</label>
+        <br></br>
         <input id="password" onChange={props.inputChangeHandler}></input>
       </div>
-      <button onClick={(e) => props.loginHandler(e)} id="submit">Submit</button>
+      <button onClick={(e) => props.loginHandler(e)} id="submit">Proceed</button>
     </form>
   )
 }
