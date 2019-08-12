@@ -4,7 +4,7 @@ import '../runningtrack.css'
 const RunningTrack = () => {
   return (
     <div className="track-container">
-    <div id="track-outer">
+    <div className="track-outer">
       <div className="track track1"></div>
       <div className="track track2"></div>
       <div className="track track3"></div>
